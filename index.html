@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="收集治愈、清醒、浪漫与松弛感短句，轻点即可复制。" />
+  <meta name="theme-color" content="#f5f1e8" />
+  <title>句里 · 每一句都刚刚好</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="回到顶部"><span>句</span>里</a>
+    <div class="top-note"><span class="pulse"></span><span id="today">今日更新</span></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">WORDS FOR EVERY MOOD · 2026</p>
+      <h1 id="hero-title">把没说出口的，<br /><em>交给一句话。</em></h1>
+      <p class="hero-copy">收藏当下流行的情绪表达。治愈、清醒、浪漫或松弛，总有一句替你开口。</p>
+      <div class="hero-actions">
+        <button class="primary-btn" id="random-btn" type="button">随机遇见一句 <span>↗</span></button>
+        <a class="text-link" href="#sentences">浏览全部 <span>↓</span></a>
+      </div>
+      <div class="hero-index" aria-hidden="true">01—60</div>
+    </section>
+
+    <section class="spotlight" id="spotlight" aria-live="polite">
+      <div class="spotlight-label">此刻的一句</div>
+      <blockquote id="random-text">“慢一点也没关系，好戏都在后面。”</blockquote>
+      <button class="copy-featured" id="copy-random" type="button">复制这句</button>
+    </section>
+
+    <section class="library" id="sentences" aria-labelledby="library-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COPY LIBRARY</p>
+          <h2 id="library-title">今日文案库</h2>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="搜索一句心情…" autocomplete="off" />
+        </label>
+      </div>
+
+      <nav class="filters" aria-label="短句分类">
+        <button class="filter active" data-category="全部" type="button">全部</button>
+        <button class="filter" data-category="治愈" type="button">治愈</button>
+        <button class="filter" data-category="清醒" type="button">清醒</button>
+        <button class="filter" data-category="生活" type="button">生活</button>
+        <button class="filter" data-category="成长" type="button">成长</button>
+        <button class="filter" data-category="浪漫" type="button">浪漫</button>
+        <button class="filter" data-category="松弛" type="button">松弛</button>
+      </nav>
+
+      <div class="sentence-grid" id="sentence-grid"></div>
+      <p class="empty" id="empty" hidden>没有找到这句心情，换个词试试。</p>
+    </section>
+
+    <section class="closing">
+      <p>愿文字有温度，愿生活有回声。</p>
+      <a href="#top">回到开头 ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 句里 · 记录值得被记住的话</p>
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">粤ICP备2026021454号</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">已复制到剪贴板</div>
+  <script src="app.js"></script>
+</body>
+</html>
